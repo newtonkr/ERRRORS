@@ -6,7 +6,10 @@ import { createStore } from "redux";
 
 
 
-const userReducer = (state,action)=>{
+const userReducer = (state{
+  name:"newton",
+  age:17
+},action)=>{
   switch (action.type) {
     case "SET_NAME":
     state = {
